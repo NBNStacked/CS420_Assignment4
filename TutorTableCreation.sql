@@ -1,4 +1,5 @@
 use tutorsession;
+
 CREATE TABLE STUDENT (
 	StudentID INT PRIMARY KEY,
 	StudentName VARCHAR(50),
@@ -25,7 +26,7 @@ CREATE TABLE ROOM (
     RoomCapacity INT
 
 );
-CREATE TABLE SESSION (
+CREATE TABLE SESSIONLIST (
 	SessionID INT PRIMARY KEY,
     SessionDate DATE,
     SessionTime TIME,

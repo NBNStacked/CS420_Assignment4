@@ -31,8 +31,16 @@ CREATE TABLE SESSION (
     SessionTime TIME,
     SessionType VARCHAR(50),
     HourlyRate DECIMAL(10,2),
-    DurationMinutes TIME
+    DurationMinutes INT,
+    StudentID INT,
+    CourseID INT,
+    RoomID INT,
+    TutorID INT,
     
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES COURSE(CourseID),
+    FOREIGN KEY (RoomID) REFERENCES ROOM(RoomID),
+    FOREIGN KEY (TutorID) REFERENCES TUTOR(TutorID)
     
 
 );

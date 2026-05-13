@@ -29,5 +29,12 @@ INSERT INTO TUTOR
     (4, "Ed Yucation", "ed_yucated@school.edu"),
     (5, "Worm Bookson", "book_worm@school.edu"),
     (6, "Tua Tea", "tua_tea@school.edu")
+;
 
+INSERT INTO SESSION
+	VALUES (1, "2026-04-01","12:00:00", "Exam Review", 20.00, 120, 1, 140, 110, 2),
+    (2, "2026-05-05","16:00:00", "Homework Help", 17.00, 90, 2, 120, 300, 3),
+    (3, "2026-05-06","12:00:00", "General Questions", 17.00, 60, 3, 130, 120, 6),
+    (4, "2026-05-07","12:00:00", "Exam Review", 17.50, 90, 4, 150, 130, 4),
+    (5, "2026-05-10","12:00:00", "Report Review", 30.00, 120, 5, 110, 200, 5)
 ;

@@ -16,10 +16,11 @@ JOIN STUDENT st ON se.studentID = st.studentID
 WHERE studentName =  "Gina Sample"
 ;
 
-SELECT * 
+SELECT co.courseTitle,
+	COUNT(*) AS total
 FROM SESSIONLIST se
-JOIN Tutor tu ON se.tutorID = tu.tutorID
-WHERE tu.tutorID = 2
+JOIN COURSE co ON se.courseID = co.courseID
+GROUP BY co.courseTitle
 ;
 
     

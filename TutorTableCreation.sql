@@ -1,7 +1,7 @@
 use tutorsession;
 CREATE TABLE STUDENT (
 	StudentID INT PRIMARY KEY,
-     StudentName VARCHAR(50),
+	StudentName VARCHAR(50),
     StudentEmail VARCHAR(50),
     Major VARCHAR(50)
     
